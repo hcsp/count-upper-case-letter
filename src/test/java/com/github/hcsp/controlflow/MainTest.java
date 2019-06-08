@@ -9,9 +9,9 @@ class MainTest {
     public void test() {
         int n = new java.util.Random().nextInt(50) + 50;
         String str =
-                IntStream.range(n, n + 20)
+                java.util.stream.IntStream.range(n, n + 20)
                         .mapToObj(i -> String.format("%c", i))
-                        .collect(Collectors.joining(""));
+                        .collect(java.util.streamCollectors.joining(""));
         assertEquals(
                 (int) str.chars().filter(Character::isUpperCase).count(),
                 Main.countUpperCaseLetters(str));
