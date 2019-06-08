@@ -11,7 +11,7 @@ class MainTest {
         String str =
                 java.util.stream.IntStream.range(n, n + 20)
                         .mapToObj(i -> String.format("%c", i))
-                        .collect(java.util.streamCollectors.joining(""));
+                        .collect(java.util.stream.Collectors.joining(""));
         assertEquals(
                 (int) str.chars().filter(Character::isUpperCase).count(),
                 Main.countUpperCaseLetters(str));
