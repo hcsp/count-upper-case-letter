@@ -1,7 +1,6 @@
 package com.github.hcsp.controlflow;
 
 public class Main {
-
     /**
      * 统计一个给定的字符串中，大写英文字母（A,B,C,...,Z）出现的次数。
      *

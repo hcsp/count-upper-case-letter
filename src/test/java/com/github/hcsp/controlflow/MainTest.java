@@ -1,18 +1,18 @@
 package com.github.hcsp.controlflow;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import java.util.Random;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class MainTest {
+public class MainTest {
     @Test
     public void test() {
-        int n = new java.util.Random().nextInt(50) + 50;
+        int n = new Random().nextInt(50) + 50;
         String str =
-                java.util.stream.IntStream.range(n, n + 20)
+                stream.IntStream.range(n, n + 20)
                         .mapToObj(i -> String.format("%c", i))
-                        .collect(java.util.stream.Collectors.joining(""));
-        assertEquals(
+                        .collect(stream.Collectors.joining(""));
+        Assertions.assertEquals(
                 (int) str.chars().filter(Character::isUpperCase).count(),
                 Main.countUpperCaseLetters(str));
     }
