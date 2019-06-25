@@ -14,12 +14,12 @@ public class Main {
      * @return 字符串中大写英文字母出现的次数
      */
     public static int countUpperCaseLetters(String str) {
-        int count=0;
-           ArrayList<String> arr=new ArrayList<String>();
-           for (int i =0; i <str.length() ; i++) {
-            if('A'<=str.toCharArray()[i]&&str.toCharArray()[i]<='Z'){
-               arr.add(String.valueOf(str.charAt(i)));
-                count++;
+        int count=0;//定义一个计数器count
+           ArrayList<String> arr=new ArrayList<String>();//新建一个arr列表，用于存放字符串中的大写字符。
+           for (int i =0; i <str.length() ; i++) {//对字符串进行遍历
+            if('A'<=str.toCharArray()[i]&&str.toCharArray()[i]<='Z'){//判断字符是否为大写字符
+               arr.add(String.valueOf(str.charAt(i)));//将大写字符存入arr列表中。
+                count++;//计数器+1；
             }
            }
             System.out.println("该字符串中出现了"+count+"次大写字符");
