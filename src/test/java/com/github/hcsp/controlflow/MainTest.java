@@ -23,7 +23,7 @@ public class MainTest {
 
     @Test
     public void noMagicNumbers() {
-        String sourceCode = ProjectSourceFileReader.readAsString(Solution.class);
+        String sourceCode = ProjectSourceFileReader.readAsString(Main.class);
         Assertions.assertTrue(
                 Stream.of("65", "90", "0x41", "0x5a").noneMatch(sourceCode::contains));
     }
