@@ -13,27 +13,14 @@ public class Main {
      * @return 字符串中大写英文字母出现的次数
      */
     public static int countUpperCaseLetters(String str) {
-        // one way ↓
         int counter = 0;
-        String regexp = "[A-Z]";
-        Pattern pattern = Pattern.compile(regexp);
-        Matcher matcher = pattern.matcher(str);
-        while (matcher.find()) {
-            counter+=1;
+        char[] chArr = str.toCharArray();
+        for (char ch : chArr) {
+            if (Character.isUpperCase(ch)) {
+                counter++;
+            }
         }
         return counter;
-        
-        // another way ↓
-        
-        // int counter = 0;
-        // char[] chArr = str.toCharArray();
-        // for (char ch : chArr) {
-        //    int ascii = (byte) ch;
-        //    if (65 <= ascii && ascii <= 90) {
-        //        counter++;
-        //    }
-        //}
-        //return counter;
     }
 
     public static void main(String[] args) {
