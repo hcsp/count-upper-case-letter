@@ -14,7 +14,7 @@ public class Main {
         char[] strArr = str.toCharArray();
         for (char ch:
              strArr) {
-            if(ch >= 65 && ch <= 90) {
+            if(ch >= 'A' && ch <= 'Z') {
                 number += 1;
             }
         }
