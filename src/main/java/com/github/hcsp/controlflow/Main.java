@@ -10,13 +10,13 @@ public class Main {
      * @return 字符串中大写英文字母出现的次数
      */
     public static int countUpperCaseLetters(String str) {
-        int i=0;
-        for (i=0;i<=str.length();i++){
+        int i,j=0;
+        for (i=0;i<str.length();i++){
             if (str.charAt(i)>='A'&&str.charAt(i)<='Z'){
-                i=i+1;
+                j++;
             }
         }
-        return i;
+        return j;
     }
 
     public static void main(String[] args) {
