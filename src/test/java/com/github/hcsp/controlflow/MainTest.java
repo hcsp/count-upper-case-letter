@@ -25,6 +25,6 @@ public class MainTest {
     public void noMagicNumbers() {
         String sourceCode = ProjectSourceFileReader.readAsString(Main.class);
         Assertions.assertTrue(
-                Stream.of("65", "90", "0x41", "0x5a").noneMatch(sourceCode::contains));
+                Stream.of("64", "65", "90", "91", "0x41", "0x5a").noneMatch(sourceCode::contains));
     }
 }
