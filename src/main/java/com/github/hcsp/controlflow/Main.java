@@ -13,7 +13,7 @@ public class Main<count> {
         //char[] stringArr = str.toCharArray();
         int count=0;
         //for(int i=0;i<stringArr.length;i++) {
-        //    //if(stringArr[i]>=65&&stringArr[i]<=90){
+        //    //if(stringArr[i]>=5*13&&stringArr[i]<=6*15){
         //    //    count++;
         //    if (stringArr[i] <= 'Z' && stringArr[i] >= 'A') {
         //        count++;
