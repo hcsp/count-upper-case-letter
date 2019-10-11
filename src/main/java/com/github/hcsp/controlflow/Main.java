@@ -13,7 +13,7 @@ public class Main {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             char[] ch = str.toCharArray();
-            if (ch[i] >= 65 && ch[i] <= 91) {
+            if (ch[i] >= 65 && ch[i] <= 90) {
                 count++;
             }
         }
