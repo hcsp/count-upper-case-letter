@@ -12,7 +12,7 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         int times = 0;
         for (char c : str.toCharArray()) {
-            if (c > 64 && c <91) {
+            if (c >= 'A' && c <= 'Z') {
                 times++;
             }
         }
@@ -20,6 +20,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        countUpperCaseLetters("AaBbCc1234ABC");
+        //countUpperCaseLetters("AaBbCc1234ABC");
+        System.out.println(countUpperCaseLetters("AaBbCc1234ABC"));
     }
 }
