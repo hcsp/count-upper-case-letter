@@ -12,8 +12,7 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         int sum = 0;
         for (int i = 0; i < str.length(); i++) {
-            System.out.println((int)str.charAt(i));
-            if((int)str.charAt(i)>=65 && (int)str.charAt(i) <=90)
+            if(str.charAt(i)>='A' && str.charAt(i) <='Z')
             sum++;
         }
         return sum;
