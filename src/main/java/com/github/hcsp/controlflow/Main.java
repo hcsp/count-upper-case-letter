@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import java.util.ArrayList;
+
 public class Main {
     /**
      * 统计一个给定的字符串中，大写英文字母（A,B,C,...,Z）出现的次数。
@@ -9,7 +11,13 @@ public class Main {
      * @param str 给定的字符串
      * @return 字符串中大写英文字母出现的次数
      */
-    public static int countUpperCaseLetters(String str) {}
+    public static int countUpperCaseLetters(String str) {
+        int num = 0;
+        for (char element: str.toCharArray()) {
+            if(element >= 'A' && element <= 'Z') num++;
+        }
+        return num;
+    }
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
