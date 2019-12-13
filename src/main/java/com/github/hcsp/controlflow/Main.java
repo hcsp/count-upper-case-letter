@@ -12,10 +12,11 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         int j=0;
         char[] cs = str.toCharArray();
-        for (char c : cs){
-            if(c>=65 && c<=90){
+        for (char c : cs) {
+            if (c >= 65 && c <= 90) {
                 j++;
             }
+        }
             return j;
     }
 
