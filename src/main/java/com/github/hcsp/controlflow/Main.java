@@ -13,14 +13,15 @@ public class Main {
         int j=0;
         char[] cs = str.toCharArray();
         for (char c : cs) {
-            if (c >= 65 && c <= 90) {
+            if (c >= 'A' && c <= 'Z') {
                 j++;
             }
         }
             return j;
+
     }
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
-    }
+       }
 }
