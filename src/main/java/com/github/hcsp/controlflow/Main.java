@@ -14,11 +14,14 @@ public class Main {
         for (int i = 0; i < str.length(); i++) {
             char a = str.charAt(i);
             if(a >= 65 && a <= 90) {
+                System.out.println(a);
                 b++;
             }
         }
+        System.out.println(b);
         return b;
     }
+
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
