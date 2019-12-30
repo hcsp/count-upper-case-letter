@@ -17,9 +17,9 @@ public class Main {
         //所以，一下是参考优秀答案的修改
         int count = 0;
 
-        for (char ch :
-                str.toCharArray()) {
-            if (ch >= 'A' && ch <= 'Z') {
+        for (char ch :str.toCharArray()) {
+            //看到有同学用isUpperCase,来判断是否为大写字母，增加代码的可读性
+            if (Character.isUpperCase(ch)) {
                 count++;
             }
         }
