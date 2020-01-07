@@ -14,7 +14,7 @@ public class Main {
         char[] ch=str.toCharArray();
 
         for (char element:ch) {
-             if((int)element>=65 && (int)element<=90){++i;}
+             if(element>='A' && element<='Z'){++i;}
         }
         System.out.println(i);
         return i;
