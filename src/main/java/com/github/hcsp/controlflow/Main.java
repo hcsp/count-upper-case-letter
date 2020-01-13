@@ -12,7 +12,7 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         int i = 0;
         for (int j = 0; j < str.length(); j++) {
-            if (Character.isUpperCase(str.charAt(j)) == true) i++;
+            if (Character.isUpperCase(str.charAt(j)) ) i++;
         }
         System.out.println(i);
         return i;
