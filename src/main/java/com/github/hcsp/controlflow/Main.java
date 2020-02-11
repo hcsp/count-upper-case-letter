@@ -11,18 +11,27 @@ public class Main {
      */
     public static int countUpperCaseLetters(String str) {
         int num = 0;
-        int i = 0;
-        String[] s = new String[]{};
-        while (i < str.length()) {
-            char c = str.charAt(i);
-            if (Character.isUpperCase(c)) {
+        for (char ch : str.toCharArray()) {
+            if (Character.isUpperCase(ch)) {
                 num++;
             }
-            i++;
         }
         System.out.println(num);
         return num;
     }
+//        int num = 0;
+//        int i = 0;
+//        String[] s = new String[]{};
+//        while (i < str.length()) {
+//            char c = str.charAt(i);
+//            if (Character.isUpperCase(c)) {
+//                num++;
+//            }
+//            i++;
+//        }
+//        System.out.println(num);
+//        return num;
+//    }
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
