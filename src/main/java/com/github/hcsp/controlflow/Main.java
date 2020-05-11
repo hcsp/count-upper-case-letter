@@ -10,9 +10,9 @@ public class Main {
      * @return 字符串中大写英文字母出现的次数
      */
     public static int countUpperCaseLetters(String str) {
-        int count =0;
-        for (char c:str.toCharArray()) {
-            if(c >= 'A' && c <= 'A'){
+        int count = 0;
+        for (char c : str.toCharArray()) {
+            if (c >= 'A' && c <= 'Z') {
                 count++;
             }
         }
