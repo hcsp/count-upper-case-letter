@@ -13,7 +13,7 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         char[] arr = str.toCharArray();
         int num = 0;
-        for(char c : arr){
+        for (char c : arr) {
             if (c >= 'A' && c <= 'Z') {
                 num++;
             }
