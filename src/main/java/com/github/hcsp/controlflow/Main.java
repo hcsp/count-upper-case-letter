@@ -13,11 +13,11 @@ public class Main {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             int code = str.charAt(i);
-            if (code >= 65 && code <= 90) {
+            System.out.println(code);
+            if (code >= 'A' && code <= 'Z') {
                 count++;
             }
         }
-        System.out.println(count);
         return count;
     }
 
