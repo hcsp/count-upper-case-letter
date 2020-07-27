@@ -12,11 +12,12 @@ public class Main {
     public static int countUpperCaseLetters(String str) {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
-            int code = (int) str.charAt(i);
+            int code = str.charAt(i);
             if (code >= 65 && code <= 90) {
                 count++;
             }
         }
+        System.out.println(count);
         return count;
     }
 
