@@ -11,16 +11,15 @@ public class Main {
      */
     public static int countUpperCaseLetters(String str) {
         int result = 0;
-        for (char ch : str.toCharArray()) {
-            if ((int) ch >= 65 && (int) ch <= 90) {
-                result += 1;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
+                result++;
             }
         }
         return result;
     }
 
     public static void main(String[] args) {
-        int i = countUpperCaseLetters("AaBbCc1234ABC");
-        System.out.println(i);
+        countUpperCaseLetters("AaBbCc1234ABC");
     }
 }
