@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 public class Main {
     /**
      * 统计一个给定的字符串中，大写英文字母（A,B,C,...,Z）出现的次数。
@@ -27,5 +25,6 @@ public class Main {
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
+        countUpperCaseLetters("asdf   434 AAAbbb");
     }
 }
