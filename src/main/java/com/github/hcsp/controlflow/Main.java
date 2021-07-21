@@ -16,8 +16,11 @@ public class Main {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) >= 65 && str.charAt(i) <= 90) {
                 count++;
+            }else{
+                continue;
             }
         }
+        System.out.println(count);
         return count;
 
     }
