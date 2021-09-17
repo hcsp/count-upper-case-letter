@@ -21,7 +21,7 @@ public class Main {
             }
 
         }
-        //System.out.println(j);
+        System.out.println(j);
         return j;
     }
 
