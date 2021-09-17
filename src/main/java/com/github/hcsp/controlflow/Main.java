@@ -9,7 +9,21 @@ public class Main {
      * @param str 给定的字符串
      * @return 字符串中大写英文字母出现的次数
      */
-    public static int countUpperCaseLetters(String str) {}
+    public static int countUpperCaseLetters(String str) {
+
+        int j = 0;
+        char[] arr = str.toCharArray();//字符串转为数组
+
+        for(int i = 0;i < arr.length;i++) {
+
+            if(65 <= arr[i] & arr[i] <= 90) {
+                j++;
+            }
+
+        }
+        //System.out.println(j);
+        return j;
+    }
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
