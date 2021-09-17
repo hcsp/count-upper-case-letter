@@ -14,9 +14,9 @@ public class Main {
         int j = 0;
         char[] arr = str.toCharArray();//字符串转为数组
 
-        for(int i = 0;i < arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if(65 <= arr[i] & arr[i] <= 90) {
+            if (65 <= arr[i] & arr[i] <= 90) {
                 j++;
             }
 
