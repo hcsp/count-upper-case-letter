@@ -13,7 +13,7 @@ public class Main {
         char[] em = str.toCharArray();
         int s = 0;
         for (int i = 0; i < em.length; i++) {
-            if(em[i]>=65&&em[i]<=90) {
+            if(em[i]>='A'&&em[i]<='Z') {
                s++;
             }
         }
