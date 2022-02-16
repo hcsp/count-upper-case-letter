@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.regex.Pattern;
-
 public class Main {
     /**
      * 统计一个给定的字符串中，大写英文字母（A,B,C,...,Z）出现的次数。
@@ -11,15 +9,7 @@ public class Main {
      * @param str 给定的字符串
      * @return 字符串中大写英文字母出现的次数
      */
-    public static int countUpperCaseLetters(String str) {
-        int times = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (Pattern.matches("[A-Z]", String.valueOf(str.charAt(i)))) {
-                times += 1;
-            }
-        }
-        return times;
-    }
+    public static int countUpperCaseLetters(String str) {}
 
     public static void main(String[] args) {
         countUpperCaseLetters("AaBbCc1234ABC");
